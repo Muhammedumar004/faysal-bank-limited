@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+::-webkit-scrollbar{
+  scroll-snap-type: inherit;
+  display: none;
+  width: 0;
+}
 /* nanbar start */
 nav{
   display: block;
@@ -162,10 +167,156 @@ nav{
      justify-content: space-around;
      overflow: auto;
    }
-   ::-webkit-scrollbar{
-    display: none;
-    width: 0;
+    /* cards end */
+
+
+ /* digital banking start */
+   .digibank-content h2{
+    font-weight: normal;
+    color: #026f77;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .download-digin-bank img{
+   width: 50%;   
+  }
+  .digital-button{
+    /* padding: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    display: flex;
+  }
+  .digital-btn{
+    border: none;
+    background-image: linear-gradient( to right,#026f77, #292d68);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    width: 120px;
+  }
+  .bank-app{
+    font-size: 65px;
+    color: #026f77;
+    font-weight: normal;
+    width: 600px;
+  }
+  .download-digin-bank{
+    background-color: #f8f8f8;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 100px;
+
+  }
+  /* digital banking end */
+  /* latset offer start */
+   .latest-offer-image{
+     border-radius: 50%;
+  }
+  .latest-offer-content h1{
+    color: #848282;
+    font-size: large;
+
+  }
+  .latest-offer-content h2{
+    color: #292d68;
+
+    
+
+  }
+  .latest-offer-main{
+    display: flex;
+    overflow: auto;
+    margin-top: 50px;
+    padding: 50px ;
+    gap: 150px;
+    background-image: linear-gradient( #cbcbcb, white);
+  }
+  .latest-offer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .latest-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+  }
+  .card{
+    width: 200px;
+  }
+  .detail{
+    margin-left: 45%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  /* latest offer end */
+
+  /* Quick links start */
+   .quick-links-content h1{
+     font-size: small;
+     font-weight: normal;
+     color: #7d7c7c;
    }
-  /* cards end */
+   .quick-links-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+   }
+   .quick-links-content img{
+      width: 50px;
+   }
+   .quick-links-main{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    align-items: center;
+    gap: 100px;
+   }
+  /* Quicklinks end */
+
+  /* islami donation start */
+  .islami-donitaion-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .islami-donitaion-content p{
+    width: 380px;
+  }
+  .donate-now-btn{
+    padding: 10px;
+    font-size: 20px;
+    width: 250px;
+    color: #848282;
+    background-color: transparent;
+    border:1px solid #848282 ;
+    border-radius: 50px;
+  }
+   .islami-donation-main{
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    background-color: #e3e0e08b;
+    align-items: center;
+    
+  }
+  .islami-donation-main img{
+    width: 50%;
+  }
+  .ayat{
+    width: 100%;
+  }
+
+  .Finance{
+    margin-top: 100px;
+  }
+  /* islami donation end */
 
 /* main end */
