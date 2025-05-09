@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -407,3 +406,271 @@ nav{
 
 
 /* main end */
+
+/* Media Queries for Tablet and Mobile */
+@media screen and (max-width: 1024px) {
+    /* Tablet Styles */
+    .navbar-top {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    
+    .navbar-bottum {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .account {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .account-txt {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .bank-cards {
+        font-size: 40px;
+    }
+    
+    .bank-app {
+        font-size: 40px;
+        width: 100%;
+    }
+    
+    .download-digin-bank {
+        flex-direction: column;
+        padding: 50px;
+        align-items: center;
+    }
+    
+    .download-digin-bank img {
+        width: 100%;
+    }
+    
+    .latest-offer-main {
+        gap: 50px;
+        padding: 30px;
+    }
+    
+    .quick-links-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 50px;
+    }
+    
+    .quick-links-content {
+        gap: 15px;
+    }
+    
+    .quick-links-content img {
+        width: 40px;
+    }
+    
+    .more-for-you-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .Finance {
+        margin-top: 50px;
+    }
+    
+    .finance-content {
+        gap: 80px;
+        margin-top: 40px;
+    }
+    
+    .content h1 {
+        font-size: 18px;
+    }
+    
+    .finance-bar {
+        width: 80%;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile Styles */
+    .navbar-top {
+        gap: 10px;
+    }
+    
+    .navbar-top a {
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .navbar-bottum {
+        flex-direction: column;
+    }
+    
+    .navbar-bottum a {
+        font-size: 10px;
+    }
+    
+    .account-main {
+        margin: 20px;
+    }
+    
+    .bank-cards {
+        font-size: 30px;
+    }
+    
+    .cards-button {
+        flex-wrap: wrap;
+    }
+    
+    .card-content-main {
+        margin: 20px;
+    }
+    
+    .bank-app {
+        font-size: 30px;
+    }
+    
+    .digital-button {
+        flex-direction: column;
+    }
+    
+    .latest-offer-main {
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .quick-links-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px;
+    }
+    
+    .quick-links-content {
+        gap: 10px;
+    }
+    
+    .quick-links-content img {
+        width: 35px;
+    }
+    
+    .quick-links-content h1 {
+        font-size: 12px;
+    }
+    
+    .more-for-you-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .looking-for-main {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .islami-donation-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .islami-donation-main img {
+        width: 100%;
+    }
+    
+    .finance-content {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .content {
+        gap: 15px;
+    }
+    
+    .content h1 {
+        font-size: 16px;
+    }
+    
+    .finance-content-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .finance-bar {
+        width: 90%;
+        margin: -30px auto 50px;
+        display: block;
+    }
+    
+    .Finance {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Small Mobile Styles */
+    .navbar-top a {
+        font-size: 8px;
+        padding: 3px;
+    }
+    
+    .bank-cards {
+        font-size: 24px;
+    }
+    
+    .bank-app {
+        font-size: 24px;
+    }
+    
+    .quick-links-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .quick-links-content {
+        gap: 8px;
+    }
+    
+    .quick-links-content img {
+        width: 30px;
+    }
+    
+    .quick-links-content h1 {
+        font-size: 11px;
+    }
+    
+    .more-for-you-main {
+        grid-template-columns: 1fr;
+    }
+    
+    .looking-for-content {
+        width: 100%;
+    }
+    
+    .Finance {
+        margin-top: 20px;
+    }
+    
+    .finance-content {
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .content {
+        gap: 10px;
+    }
+    
+    .content h1 {
+        font-size: 14px;
+    }
+    
+    .finance-bar {
+        width: 95%;
+        margin: -20px auto 30px;
+    }
+}
