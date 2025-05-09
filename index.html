@@ -445,5 +445,18 @@
 
 
    <script src="https://kit.fontawesome.com/a71ea4e7e5.js" crossorigin="anonymous"></script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navbarTop = document.querySelector('.navbar-top');
+        const navbarBottom = document.querySelector('.navbar-bottum > div:nth-child(2)');
+        
+        hamburger.addEventListener('click', function() {
+            navbarTop.classList.toggle('active');
+            navbarBottom.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    });
+</script>
 </body>
 </html>

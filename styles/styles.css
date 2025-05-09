@@ -12,7 +12,35 @@
 /* nanbar start */
 nav{
   display: block;
+  position: relative;
 }
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #292d68;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .navbar-top{
     display: flex;
     justify-content: space-around;
@@ -413,11 +441,19 @@ nav{
     .navbar-top {
         gap: 50px;
         flex-wrap: wrap;
+        padding: 10px;
     }
     
     .navbar-bottum {
         flex-wrap: wrap;
         gap: 20px;
+        padding: 10px;
+    }
+    
+    .navbar-bottum > div:nth-child(2) {
+        order: 3;
+        width: 100%;
+        justify-content: center;
     }
     
     .account {
@@ -496,21 +532,67 @@ nav{
 
 @media screen and (max-width: 768px) {
     /* Mobile Styles */
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+    }
+    
     .navbar-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient(to right,#026f77, #292d68);
+        padding: 60px 20px 20px;
+        z-index: 999;
+    }
+    
+    .navbar-top.active {
+        display: flex;
+        flex-direction: column;
         gap: 10px;
     }
     
     .navbar-top a {
-        font-size: 10px;
-        padding: 5px;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
     }
     
     .navbar-bottum {
         flex-direction: column;
+        padding: 10px;
+    }
+    
+    .navbar-bottum > div:nth-child(2) {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .navbar-bottum > div:nth-child(2).active {
+        display: flex;
     }
     
     .navbar-bottum a {
-        font-size: 10px;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar-bottum > div:last-child {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 0;
     }
     
     .account-main {
@@ -608,13 +690,35 @@ nav{
     .Finance {
         margin-top: 30px;
     }
+    
+    .navbar-top, .navbar-bottum > div:nth-child(2) {
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .navbar-top.active, .navbar-bottum > div:nth-child(2).active {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 }
 
 @media screen and (max-width: 480px) {
     /* Small Mobile Styles */
     .navbar-top a {
-        font-size: 8px;
-        padding: 3px;
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    .navbar-bottum a {
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    .navbar-bottum button {
+        width: 60px;
+        font-size: 10px;
+    }
+    
+    .navbar-bottum i {
+        font-size: 16px;
     }
     
     .bank-cards {
