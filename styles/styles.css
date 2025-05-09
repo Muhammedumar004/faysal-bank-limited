@@ -319,4 +319,91 @@ nav{
   }
   /* islami donation end */
 
+
+  /* Finance Calculator start */
+    .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .content h1{
+      font-size: 20px;
+      color: #a5a3a3;
+      font-weight: lighter;
+    }
+    .finance-content{
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      gap: 150px;
+      margin-top: 70px;
+      margin-bottom:25px;
+    }
+    .finance-content-img{
+        width: 100%;
+    }
+    .finance-bar{
+      width: 90%;
+      margin-top: -50px;
+      margin-left: 80px;
+      cursor: pointer;
+      filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.356));
+      margin-bottom: 100px;
+    }
+  /* Finance Calculator end */
+  
+
+  /* more-for-you-start */
+   .more-for-you-content img{
+     border-radius: 15px;
+     width: 200px;
+   }
+   .more-for-you-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #cbcbcb56;
+    width:250px;
+    padding: 10px;
+    border-radius: 20px;
+   }
+   .more-for-you-content h1{
+      color:#292d68 ;
+      width: 180px;text-align: center;
+      font-size: 13px;
+   }
+   .more-for-you-content button{
+    margin-top: 20px;
+   }
+   .more-for-you-main{
+    display: flex;
+    gap: 30px;
+    overflow: auto;
+    padding: 50px;
+    margin-top: 20px;
+    cursor: pointer; 
+   }
+  /* more-for-you-end */
+
+
+  /* Still lookink for something  start */
+    .looking-for-content{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .looking-for-main{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 50px;
+    }
+
+  /* Still lookink for something  end */
+
+
+
+
 /* main end */
